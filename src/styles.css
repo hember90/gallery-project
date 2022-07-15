@@ -1,12 +1,13 @@
 :root {
-  --branding-color: #eff4f8;
-  --primary-color: #364145;
+  --branding-color: #fcfcfc;
+  --primary-color: #201f1f;
   --default-font-family: "Roboto", sans-serif;
   --button-font-family: "Montserrat", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
+  background-color: var(--primary-color);
 }
 
 h1,
@@ -24,19 +25,18 @@ p {
   background-color: var(--primary-color);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: absolute;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
   width: 100%;
   color: var(--branding-color);
   text-align: center;
-  padding-bottom: 350px;
-  padding-top: 150px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 150px 30px 350px 30px;
 }
 .hero_text {
   position: relative;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .hero h1 {
@@ -50,11 +50,8 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 460px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 35px auto 35px auto;
 }
 .hero h3 {
   font-style: normal;
@@ -76,4 +73,39 @@ p {
   border-radius: 50px;
   background: var(--branding-color);
   padding: 15px 35px;
+}
+
+.gallery {
+  position: relative;
+  margin: 50px auto;
+  padding: 0 50px;
+  max-width: 1100px;
+  float: none;
+}
+.gallery img {
+  filter: grayscale(90%);
+}
+.gallery:hover img:hover {
+  filter: none;
+  transition: filter 1s;
+}
+
+.fit-image {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    margin: 0 auto;
+    padding: 150px 30px 200px 30px;
+  }
+  .hero h1 {
+    font-size: 58px;
+    text-align: center;
+  }
+  .hero h3 {
+    font-size: 22px;
+  }
 }
