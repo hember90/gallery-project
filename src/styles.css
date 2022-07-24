@@ -261,15 +261,14 @@ nav ul {
     padding: 0 5% 1px 5%;
     text-align: center;
   }
+  .about-me h1 {
+    font-size: 40px;
+  }
   .about-me p {
     font-size: 16px;
   }
-  .about-me h1 {
-    font-size: 50px;
-  }
-
   .contact h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .gallerypage {
@@ -278,7 +277,9 @@ nav ul {
   .gallerypage h1 {
     padding-bottom: 0px;
   }
-  .socials {
-    margin-bottom: 20px;
+}
+@media (max-width: 1210px) {
+  .about-me h1 {
+    font-size: 50px;
   }
 }
