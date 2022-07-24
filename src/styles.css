@@ -224,7 +224,8 @@ nav ul {
   margin-bottom: 80px;
 }
 .socials i {
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: var(--branding-color);
 }
 
@@ -254,7 +255,7 @@ nav ul {
     font-size: 22px;
   }
   .column-text {
-    margin: 40px 5% 1px 5%;
+    margin: 40px 5px 1px 5px;
   }
   .about-me {
     padding: 0 5% 1px 5%;
@@ -276,5 +277,8 @@ nav ul {
   }
   .gallerypage h1 {
     padding-bottom: 0px;
+  }
+  .socials {
+    margin-bottom: 20px;
   }
 }
