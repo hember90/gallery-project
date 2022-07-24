@@ -107,7 +107,7 @@ nav ul {
 .gallerypage {
   min-width: 100%;
   background-color: var(--background-color);
-  padding: 30px 100px 20px 100px;
+  padding: 30px 5% 20px 5%;
   color: var(--branding-color);
   margin: auto;
 }
@@ -273,7 +273,6 @@ nav ul {
 
   .gallerypage {
     min-width: 100%;
-    padding: 30px 0 0 0;
   }
   .gallerypage h1 {
     padding-bottom: 0px;
