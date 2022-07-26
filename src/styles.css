@@ -36,6 +36,9 @@ nav ul {
   padding: 0;
   margin: 0;
 }
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.05rem;
+}
 
 .hero {
   background-image: url(../src/images/suitcasegray.png);
@@ -261,6 +264,7 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 25px 20px 25px 20px;
+  align-items: center;
 }
 footer i {
   margin: auto 10px auto 10px;
